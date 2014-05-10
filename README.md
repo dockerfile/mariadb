@@ -20,4 +20,4 @@ This repository contains **Dockerfile** of [MariaDB](https://mariadb.org/) for [
 
 ### Usage
 
-    docker run -it --rm dockerfile/mariadb
+    docker run -it --rm -p 3306:3306 dockerfile/mariadb

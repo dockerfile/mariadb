@@ -20,7 +20,7 @@ VOLUME ["/data"]
 WORKDIR /data
 
 # Define default command.
-CMD ["mariadb"]
+CMD ["bash"]
 
 # Expose ports.
 EXPOSE 3306
