@@ -14,15 +14,16 @@ RUN \
   apt-get update && \
   apt-get install -y mariadb-server && \
   sed -i 's/^\(bind-address\s.*\)/# \1/' /etc/mysql/my.cnf
+  service mysql start
 
 # Define mountable directories.
-VOLUME ["/data"]
+VOLUME ["/data", "/etc/mysql"]
 
 # Define working directory.
 WORKDIR /data
 
 # Define default command.
-CMD ["bash"]
+CMD ["mysql"]
 
 # Expose ports.
 EXPOSE 3306
