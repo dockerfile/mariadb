@@ -14,6 +14,7 @@ RUN \
   ln -fs /bin/true /usr/bin/chfn && \
   apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server && \
+  rm -rf /var/lib/apt/lists/* && \
   sed -i 's/^\(bind-address\s.*\)/# \1/' /etc/mysql/my.cnf && \
   echo "mysqld_safe &" > /tmp/config && \
   echo "sleep 5" >> /tmp/config && \
