@@ -22,8 +22,8 @@ This repository contains **Dockerfile** of [MariaDB](https://mariadb.org/) for [
 
 #### Run `mysqld-safe`
 
-    docker run -d --name mysql -p 3306:3306 dockerfile/mariadb
+    docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> mariadb
 
 #### Run `mysql`
 
-    docker run -it --rm --link mysql:mysql dockerfile/mariadb bash -c 'mysql -h $MYSQL_PORT_3306_TCP_ADDR'
+    docker run -it --rm --link mysql:mysql mariadb bash -c 'mysql -h mysql -p'
