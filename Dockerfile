@@ -1,11 +1,11 @@
 #
 # MariaDB Dockerfile
 #
-# https://github.com/dockerfile/mariadb
+# https://github.com/luciano-jr/mariadb
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM luciano-jr/ubuntu
 
 # Install MariaDB.
 RUN \
