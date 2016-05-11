@@ -1,4 +1,3 @@
-#
 # MariaDB Dockerfile
 #
 # https://github.com/luciano-jr/mariadb
