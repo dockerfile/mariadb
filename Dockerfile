@@ -1,7 +1,6 @@
 # MariaDB Dockerfile
 #
 # https://github.com/luciano-jr/mariadb
-#
 
 # Pull base image.
 FROM lucianojr/ubuntu
