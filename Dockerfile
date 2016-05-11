@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM luciano-jr/ubuntu
+FROM lucianojr/ubuntu
 
 # Install MariaDB.
 RUN \
